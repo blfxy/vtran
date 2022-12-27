@@ -1,0 +1,18 @@
+:root {
+    /* -------------------------------字体大小-------------------------------- */
+    --v-logo-txt-size: 30px;
+    /* banner字体大小 */
+    --v-banner-txt-size: 28px;
+    /* header菜单字体大小 */
+    --v-menu-txt-size: 16px;
+    /* 文章标题字体大小 */
+    --v-title-txt-size: 30px;
+    /*  左侧aside标题字体大小 */
+    --v-card-title-txt-size: 20px;
+    /* 普通字体大小 */
+    --v-txt-size: 16px;
+
+    /* ---------------------------------宽度----------------------------- */
+    /* content宽度 */
+    --v-content-width: 1500px;
+}

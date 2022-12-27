@@ -1,0 +1,135 @@
+/*=============================================背景相关=========================================================*/
+/* header菜单背景 */
+.menu-bg {
+    background-color: var(--v-bg-menu-color);
+}
+.content-bg {
+    background-color: var(--v-bg-content-color);
+}
+/* 浅色背景 */
+.light-bg {
+    background-color: var(--v-bg-light-color);
+}
+/* 深色背景 */
+.deep-bg {
+    background-color: var(--v-bg-deep-color);
+}
+/* 渐变背景色 d-深色背景 l浅色背景 b从上往下 */
+.d-l-b-bg {
+    background: var(--v-bg-deep-color);
+    background: -webkit-linear-gradient(
+        to bottom,
+        var(--v-bg-deep-color),
+        var(--v-bg-light-color)
+    );
+    background: linear-gradient(
+        to bottom,
+        var(--v-bg-deep-color),
+        var(--v-bg-light-color)
+    );
+}
+.l-d-t-bg {
+    background: var(--v-bg-light-color);
+    background: -webkit-linear-gradient(
+        to top,
+        var(--v-bg-light-color),
+        var(--v-bg-deep-color)
+    );
+    background: linear-gradient(
+        to bottom,
+        var(--v-bg-light-color),
+        var(--v-bg-deep-color)
+    );
+}
+/*=============================================字体相关=========================================================*/
+/* 主题字体颜色 */
+.txt-color {
+    color: var(--v-txt-color);
+}
+/* 高亮字体颜色 */
+.txt-bright-color {
+    color: var(--v-txt-bright-color);
+}
+/* 菜单字体大小 */
+.menu-txt-size {
+    font-size: var(--v-menu-txt-size);
+}
+/* logo字体大小 */
+.logo-size {
+    font-size: var(--v-logo-txt-size);
+}
+/* banner字体大小 */
+.banner-txt-size {
+    font-size: var(--v-banner-txt-size);
+}
+/* 主题字体大小 */
+.txt-size {
+    font-size: var(--v-txt-size);
+}
+/* 左侧aside卡片标题字体大小*/
+.card-title-txt-size {
+    font-size: var(--v-card-title-txt-size);
+}
+
+/*======================================================================================================*/
+/* content宽度 */
+.v-width {
+    width: var(--v-content-width);
+}
+/*===========================================hover active状态===========================================================*/
+/* hover颜色 */
+.v-hover:hover {
+    color: var(--v-bright-color);
+}
+/* 激活态背景 */
+.v-active {
+    background-color: var(--v-bg-deep-color);
+}
+/* 非激活态背景 */
+.v-inactive {
+    background-color: var(--v-bg-light-color);
+}
+/* 文章标题字体大小*/
+.v-title-txt-size {
+    font-size: var(--v-title-txt-size);
+}
+.v-active-shadow {
+    box-shadow: 2px 2px 4px var(--v-bg-light-color),
+        -2px -2px 4px var(--v-bg-light-color);
+}
+
+/*=============================================动画相关=========================================================*/
+/* 菜单背景动画*/
+@keyframes menu-active-bg {
+    from {
+        background-color: var(--v-bg-menu-color);
+    }
+    to {
+        background-color: var(--v-bg-deep-color);
+    }
+}
+@keyframes menu-inactive-bg {
+    from {
+        background-color: var(--v-bg-deep-color);
+    }
+    to {
+        background-color: var(--v-bg-menu-color);
+    }
+}
+
+@keyframes active-bg {
+    from {
+        background-color: var(--v-bg-light-color);
+    }
+    to {
+        background-color: var(--v-bg-deep-color);
+    }
+}
+@keyframes inactive-bg {
+    from {
+        background-color: var(--v-bg-deep-color);
+    }
+    to {
+        background-color: var(--v-bg-light-color);
+    }
+}

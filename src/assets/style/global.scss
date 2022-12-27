@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "MaShanZheng-Regular";
+    src: url("../fonts/MaShanZheng-Regular.ttf");
+}
+@font-face {
+    font-family: "XiaoWei-Regular";
+    src: url("../fonts/ZCOOLXiaoWei-Regular.ttf");
+}
+html {
+    font-size: 16px;
+    font-family: XiaoWei-Regular, MaShanZheng-Regular;
+}
+@media screen and (max-width: 1620px) {
+    :root {
+        --v-content-width: 1320px;
+    }
+}
+@media screen and (max-width: 1420px) {
+    :root {
+        --v-content-width: 1120px;
+    }
+}
+@media screen and (max-width: 1220px) {
+    :root {
+        --v-content-width: 860px;
+    }
+}
+@media screen and (max-width: 1020px) {
+    :root {
+        --v-content-width: 760px;
+    }
+    html {
+        font-size: 12px;
+    }
+}
+body {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+p {
+    margin: 0;
+}
+h3 {
+    margin: 0;
+    font-weight: normal;
+}
